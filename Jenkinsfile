@@ -1,6 +1,6 @@
 pipeline{
     
-    agent {label "dev"};
+    agent {label "Dev"};
     
     stages{
       stage("code clone"){
