@@ -40,15 +40,17 @@ pipeline{
            }
        }  
      } 
-     post{
-         success{
-             script{
-                 email text (from:'gmail',
-                     to:'gmail',
-                     body:'Build success for First cicd',
-                     subject:'Build success'
+     post {
+    success {
+        script {
+            emailext(
+                from: 'gmail',
+                to: 'arshiyaamena93@gmail.com',
+                subject: 'Build success',
+                body: 'Build success for First CI/CD'
             )
-             }
-         }
-     }
-    }   
+        }
+    }
+  }
+}
+           
