@@ -51,6 +51,17 @@ pipeline{
             )
         }
     }
-  }
+         failure {
+             script{
+                 emailtext(
+                 from: 'gmail',
+                to: 'arshiyaamena93@gmail.com',
+                subject: 'Build failure',
+                body: 'Build failed for First CI/CD'
+                     )
+             }
+                 
+         }
+     }
 }
            
