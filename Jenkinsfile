@@ -43,11 +43,11 @@ pipeline{
      post{
          success{
              script{
-                 email text from:'gmail',
+                 email text (from:'gmail',
                      to:'gmail',
                      body:'Build success for First cicd',
                      subject:'Build success'
-
+            )
              }
          }
      }
