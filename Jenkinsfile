@@ -57,7 +57,7 @@ pipeline{
         }
     }
          failure {
-             script{
+             script {
                  emailtext(
                  from: 'gmail',
                 to: 'arshiyaamena93@gmail.com',
